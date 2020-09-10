@@ -111,7 +111,7 @@ function createNewCategory($db,$form_data)
     $stmt -> bindParam(':description', $form_data['description']);
     $stmt -> bindParam(':created', $form_data['created']);
     $stmt->execute();
-    return $db ->lastInsertID(); //insert last number.. continue
+    return $db ->lastInsertID(); 
 };
 
 //DELETE CATEGORY DATA BY NAME
